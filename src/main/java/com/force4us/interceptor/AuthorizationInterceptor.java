@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.force4us.domain.User;
 
 public class AuthorizationInterceptor implements HandlerInterceptor {
-	private static final String[] IGNORE_URI = { "/loginForm", "/loginff" };
+	private static final String[] IGNORE_URI = { "/loginForm", "/login" };
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
