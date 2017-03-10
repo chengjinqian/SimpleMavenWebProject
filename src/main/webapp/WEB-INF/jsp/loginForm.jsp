@@ -10,6 +10,7 @@
 	<h3>登录界面</h3>
 	<br>
 	<form action="login" method="post">
+		<font color="red">${requestScope.message }</font>
 		<table>
 			<tr>
 				<td><label>登录名：</label></td>
