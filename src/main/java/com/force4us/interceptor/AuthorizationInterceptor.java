@@ -27,7 +27,7 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
 			User user = (User) request.getSession().getAttribute("user");
 			if (user == null) {
 				System.out.println("AuthorizationInterceptor拦截请求： " + request.getServletPath());
-				request.setAttribute("message", "清先登陆网站");
+				request.setAttribute("message", "清先登陆网站填写信息");
 				request.getRequestDispatcher("login").forward(request, response);
 			} else {
 				System.out.println("AuthorizationInterceptor放行请求： ");
